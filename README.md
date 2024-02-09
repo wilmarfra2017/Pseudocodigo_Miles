@@ -1,10 +1,10 @@
 #  Sistema de Gestión de Reservas de Vehículos - Miles Car Rental
 
-Este documento describe las funciones principales del sistema de gestión de reservas de vehículos.
+#Este documento describe las funciones principales del sistema de gestión de reservas de vehículos.
 
 ## Funciones del Sistema
 
-A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
+#A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
 
 ### Función para registrar un nuevo cliente en el sistema
 Función RegistrarCliente(nombre, dirección, teléfono, email)
