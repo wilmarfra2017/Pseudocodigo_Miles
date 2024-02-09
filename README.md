@@ -24,8 +24,9 @@ Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     Clientes[idCliente] = Cliente
     Retornar idCliente
 Fin Función
+```plaintext
 
-**Función para agregar preferencias a un cliente existente**
+##**Función para agregar preferencias a un cliente existente**
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
