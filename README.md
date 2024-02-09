@@ -25,6 +25,7 @@ Funcion RegistrarCliente(nombre, dirección, teléfono, email)
 Fin Función
 
 ### Función para agregar preferencias a un cliente existente
+```plaintext
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
