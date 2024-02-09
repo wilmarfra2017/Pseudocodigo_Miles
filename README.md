@@ -6,7 +6,7 @@
 
 A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
 
-``plaintext
+```plaintext
 **Función para registrar un nuevo cliente en el sistema**
 
 Funcion RegistrarCliente(nombre, dirección, teléfono, email)
