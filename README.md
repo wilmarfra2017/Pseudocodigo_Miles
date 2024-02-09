@@ -27,6 +27,7 @@ Fin Función
 
 
 ** Función para agregar preferencias a un cliente existente **
+
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -41,6 +42,7 @@ Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
 Fin Función
 
 ** Función para crear una reserva de vehículo **
+
 Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -63,6 +65,7 @@ Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
 Fin Función
 
 ** Función para finalizar una reserva existente **
+
 Función FinalizarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
@@ -92,6 +95,7 @@ Función FinalizarReserva(idReserva)
 Fin Función
 
 ** Función para cancelar una reserva activa **
+
 Función CancelarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
