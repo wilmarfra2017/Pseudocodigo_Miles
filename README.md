@@ -1,4 +1,4 @@
-#  Sistema de Gestión de Reservas de Vehículos
+#  Sistema de Gestión de Reservas de Vehículos - Miles Car Rental
 
 Este documento describe las funciones principales del sistema de gestión de reservas de vehículos.
 
