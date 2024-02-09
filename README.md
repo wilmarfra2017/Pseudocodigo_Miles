@@ -8,7 +8,7 @@
 
 ### Función para registrar un nuevo cliente en el sistema
 Funcion RegistrarCliente(nombre, dirección, teléfono, email)
-    # Validar datos de entrada
+    #Validar datos de entrada
     Si nombre es vacío o dirección es vacía o teléfono es vacío o email es vacío
         Retornar error "Todos los campos son obligatorios"
     Fin Si
