@@ -1,13 +1,14 @@
 #  Sistema de Gestión de Reservas de Vehículos - Miles Car Rental
 
-## Este documento describe las funciones principales del sistema de gestión de reservas de vehículos.
+#Este documento describe las funciones principales del sistema de gestión de reservas de vehículos.
 
 ## Funciones del Sistema
 
-A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
+## A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
 
 **Función para registrar un nuevo cliente en el sistema**
-``plaintext
+
+```plaintext
 Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     //Validar datos de entrada
     Si nombre es vacío o dirección es vacía o teléfono es vacío o email es vacío
@@ -24,8 +25,8 @@ Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     Retornar idCliente
 Fin Función
 
-**Función para agregar preferencias a un cliente existente**
 
+//Función para agregar preferencias a un cliente existente
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -39,8 +40,7 @@ Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Retornar idPreferencia
 Fin Función
 
-**Función para crear una reserva de vehículo**
-
+//Función para crear una reserva de vehículo
 Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -62,8 +62,7 @@ Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
     Retornar "Reserva creada exitosamente con ID: " + idReserva
 Fin Función
 
-**Función para finalizar una reserva existente**
-
+//Función para finalizar una reserva existente
 Función FinalizarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
@@ -92,8 +91,7 @@ Función FinalizarReserva(idReserva)
     Retornar "Reserva finalizada exitosamente"
 Fin Función
 
-**Función para cancelar una reserva activa**
-
+//Función para cancelar una reserva activa
 Función CancelarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
@@ -113,14 +111,12 @@ Función CancelarReserva(idReserva)
     Retornar "Reserva cancelada exitosamente"
 Fin Función
 
-**Funciones de Utilidad**
-
+//Funciones de Utilidad
 Función GenerarID()
     // Generar un GUID, que es un identificador único global
     GUID = GenerarGUID()
     Retornar GUID
 Fin Función
-
 
 Función EsEmailValido(email)
     // Usar una expresión regular simple para validar el formato del email
