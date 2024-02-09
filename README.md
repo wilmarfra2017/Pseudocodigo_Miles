@@ -4,11 +4,10 @@
 
 ## Funciones del Sistema
 
-## A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
+A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
 
 **Función para registrar un nuevo cliente en el sistema**
 
-```plaintext
 Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     //Validar datos de entrada
     Si nombre es vacío o dirección es vacía o teléfono es vacío o email es vacío
@@ -24,9 +23,9 @@ Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     Clientes[idCliente] = Cliente
     Retornar idCliente
 Fin Función
-```plaintext
 
-##**Función para agregar preferencias a un cliente existente**
+
+**Función para agregar preferencias a un cliente existente**
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -111,7 +110,7 @@ Función CancelarReserva(idReserva)
     Retornar "Reserva cancelada exitosamente"
 Fin Función
 
-**## Funciones de Utilidad
+**Funciones de Utilidad**
 
 Función GenerarID()
     // Generar un GUID, que es un identificador único global
