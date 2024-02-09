@@ -6,7 +6,7 @@
 
 ## A continuación se presentan las principales funciones del sistema y su lógica de operación en pseudocódigo.
 
-### Función para registrar un nuevo cliente en el sistema
+**## Función para registrar un nuevo cliente en el sistema
 
 ```plaintext
 Funcion RegistrarCliente(nombre, dirección, teléfono, email)
@@ -25,7 +25,7 @@ Funcion RegistrarCliente(nombre, dirección, teléfono, email)
     Retornar idCliente
 Fin Función
 
-## Función para agregar preferencias a un cliente existente
+**## Función para agregar preferencias a un cliente existente
 Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -39,7 +39,7 @@ Función AgregarPreferencia(idCliente, tipoVehiculoPreferido, accesoriosExtras)
     Retornar idPreferencia
 Fin Función
 
-## Función para crear una reserva de vehículo
+**## Función para crear una reserva de vehículo
 Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
     Si idCliente no está en Clientes
         Retornar error "Cliente no encontrado"
@@ -61,7 +61,7 @@ Función CrearReserva(idCliente, idVehiculo, fechaInicio, fechaFin)
     Retornar "Reserva creada exitosamente con ID: " + idReserva
 Fin Función
 
-## Función para finalizar una reserva existente
+**## Función para finalizar una reserva existente
 Función FinalizarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
@@ -90,7 +90,7 @@ Función FinalizarReserva(idReserva)
     Retornar "Reserva finalizada exitosamente"
 Fin Función
 
-## Función para cancelar una reserva activa
+**## Función para cancelar una reserva activa
 Función CancelarReserva(idReserva)
     Si idReserva no está en Reservas
         Retornar error "Reserva no encontrada"
@@ -110,7 +110,7 @@ Función CancelarReserva(idReserva)
     Retornar "Reserva cancelada exitosamente"
 Fin Función
 
-## Funciones de Utilidad
+**## Funciones de Utilidad
 
 Función GenerarID()
     // Generar un GUID, que es un identificador único global
